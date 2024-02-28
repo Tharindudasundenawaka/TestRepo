@@ -1,9 +1,15 @@
-console.log('Hii console');
+document.addEventListener("DOMContentLoaded", function(){
+    var form = document.getElementById("htmlForm");
 
-const name = "tharindu"
-const age = 26
+    form.addEventListener("submit", function(){
+        event.preventDefault();
 
-console.log(`Name Is : $name, age Is: $age`);
+        var name = document.getElementById('name').value;
+        console.log(name)
 
+        var age = document.getElementById('age').value;
+        console.log(age)
 
-// hii theri
+        alert('Name:'+ name + "\nAge" + age )
+    })
+})
